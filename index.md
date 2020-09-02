@@ -1,7 +1,6 @@
 ---
 layout: base
 title: 軟體技術雜記
-permalink: /home/
 ---
 
 自學一些技術

@@ -50,6 +50,13 @@
 
 img {
   width: 100%;
+  border: 1px gray dashed;
+}
+
+img.thumb {
+  width: 50px;
+  height: 50px;
+  border-style: none;
 }
 
 html {
@@ -205,7 +212,7 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none;
+  /* border-style: none; */
 }
 
 svg {
@@ -6171,7 +6178,8 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  /* background-color: #3a3b45 !important; */
+  background-image: linear-gradient(to right, #3a3b45 50%, black 100%) !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -10122,7 +10130,7 @@ body {
 .sb-nav-fixed #layoutSidenav #layoutSidenav_content {
   padding-left: 225px;
   top: 56px;
-  background-color: #ede6da;
+  background-color: #f8f9fa;
 }
 
 #layoutError {
@@ -10212,7 +10220,7 @@ body {
 }
 
 .sb-sidenav-dark {
-  background-color: #212529;
+  background-image: linear-gradient(180deg,#3a3b45 10%,#716d60 100%);
   color: rgba(255, 255, 255, 0.5);
 }
 .sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
@@ -10237,7 +10245,7 @@ body {
   color: #fff;
 }
 .sb-sidenav-dark .sb-sidenav-footer {
-  background-color: #343a40;
+  /* background-color: #343a40; */
 }
 
 .sb-sidenav-light {
