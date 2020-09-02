@@ -20,7 +20,7 @@
 
 title: sOFtnOTE
 email: shenyun23.4@gmail.com
-baseurl: "softnote_blog" # the subpath of your site, e.g. /blog
+baseurl: "/softnote_blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  shenyun2304
 
