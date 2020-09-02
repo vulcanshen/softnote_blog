@@ -28,7 +28,7 @@ Windows 安裝程式就是無限的 `下一步`
 
 安裝到開啟終端機的時候會跳出選項讓選，每個選項最後都會有 `If unsure press ENTER` 的敘述，反正我是不知道要怎麼選，通通直接按 `ENTER`
 
-![image](/assets/image/ruby-installation.png)
+![image]({{site.baseurl}}/assets/image/ruby-installation.png)
 
 
 # 創建
@@ -46,7 +46,7 @@ Windows 安裝程式就是無限的 `下一步`
 就可以看到開始啟動伺服器，預設會啟動再 `4000` port 上，啟動完成之後開啟瀏覽器並連結
 `http://127.0.0.1:4000`，就可以看到 Jekyll 的歡迎畫面了
 
-![demo-start](/assets/image/jekyll-demo-start.png)
+![demo-start]({{site.baseurl}}/assets/image/jekyll-demo-start.png)
 
 # 開發環境
 
