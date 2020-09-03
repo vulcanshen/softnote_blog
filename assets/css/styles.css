@@ -54,7 +54,7 @@ img {
   border: 1px gray dashed;
 }
 
-img.thumb {
+.noborder {
   border-style: none;
 }
 
@@ -10158,6 +10158,10 @@ body {
   padding-left: 0;
   height: 56px;
   z-index: 1039;
+}
+
+.sb-topnav img {
+  height: 50px;
 }
 .sb-topnav .navbar-brand {
   width: 225px;
