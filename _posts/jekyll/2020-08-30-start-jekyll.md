@@ -1,7 +1,8 @@
 ---
 layout: base
-title:  "開始使用 Jekyll"
+title:  "從零開始"
 categories: "Jekyll"
+content-title: "開始使用 Jekyll"
 ---
 
 為什麼使用 jekyll 呢?

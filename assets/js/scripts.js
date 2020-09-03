@@ -19,4 +19,6 @@
         e.preventDefault();
         $("body").toggleClass("sb-sidenav-toggled");
     });
+
+    $('table').addClass('table table-bordered');
 })(jQuery);
