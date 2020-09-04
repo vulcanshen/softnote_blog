@@ -104,7 +104,7 @@ content-title: "Markdown 基礎"
 的文字區塊
 ```
 
-`這會是一段依照 java syntax 著色的程式區塊`
+`下面會是一段依照 java syntax 著色的程式區塊`
 
 ```java
 public static void main(String[] args) {}
