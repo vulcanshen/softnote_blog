@@ -3,13 +3,12 @@ layout: base
 title:  "從零開始"
 categories: "Jekyll"
 content-title: "開始使用 Jekyll"
+
 ---
 
 為什麼使用 jekyll 呢?
 
 其實一開始就打算把這東西放到 github 上，又希望能用 markdown 去寫文章，不想自己搞 html 和 css，看了 github pages 首頁拉到最下面就看到 Jekyll 的連結，也沒多想就開始了
-
-這篇會一步步的介紹怎麼把頁面搞成這個樣子
 
 # 下載
 

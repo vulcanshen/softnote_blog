@@ -42,7 +42,8 @@
                             </a>
                             <div class="collapse {% if is_active == 'Yes' %} show {% endif %}" id="collapseLayouts-{{category|first}}" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
-                                    {% for post in category.last %}
+                                    {% assign sortedPosts = category.last | sort: 'date' %}
+                                    {% for post in sortedPosts %}
                                     <a class="nav-link {% if is_active == 'Yes' %} active {% endif %}" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
                                     {% endfor %}
                                 </nav>
