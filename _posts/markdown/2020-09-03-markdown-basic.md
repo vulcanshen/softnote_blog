@@ -65,6 +65,7 @@ content-title: "Markdown 基礎"
 ```
 
 [點我連到 Google Search](https://www.google.com/)
+
 ![直接顯示圖片](https://github.githubassets.com/images/modules/logos_page/Octocat.png)
 
 ---
@@ -115,7 +116,7 @@ public static void main(String[] args) {}
 的文字區塊
 ```
 
-`這會是一段依照 java syntax 著色的程式區塊`
+`下面會是一段依照 java syntax 著色的程式區塊`
 
 ```java
 public static void main(String[] args) {}
