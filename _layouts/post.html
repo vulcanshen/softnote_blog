@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid">
+            <h1 class="mt-4">{{ page.content-title }}</h1>
+            <div class="mb-4">
+                {{ content }}
+            </div>
+        </div>
+    </main>
+    <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">CopyLeft &copy; 轉載請註明出處</div>
+                <div class="text-muted">處出明註請載轉 &copy; CopyRight</div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id="layoutSidenav_toc">
+    <nav class="sb-sidenav accordion sb-sidenav-dark sb-sidenav-transparent">
+        <div class="sb-sidenav-menu">
+            <div class="nav">
+                <div class="sb-sidenav-menu-heading text-secondary">
+                    小節
+                </div>
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        {{ content | toc_only }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+

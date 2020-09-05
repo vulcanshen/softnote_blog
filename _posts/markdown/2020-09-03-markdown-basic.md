@@ -1,11 +1,10 @@
 ---
-layout: base
+layout: post
 title:  "快速上手"
 categories: "Markdown"
 content-title: "Markdown 基礎"
 description: "Markdown 基礎八招, 10 分鐘內馬上學會寫出漂亮 md 檔"
 ---
-
 # 1. 標題
 
 ```

@@ -21,4 +21,8 @@
     });
 
     $('table').addClass('table table-bordered');
+
+    if ($('#layoutSidenav_toc').length == 0) {
+        $('#layoutSidenav_content').css('padding-right', 0);
+    }
 })(jQuery);

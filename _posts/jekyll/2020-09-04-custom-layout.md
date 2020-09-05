@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 title:  "自訂外觀布局"
 categories: "Jekyll"
 content-title: "Theme and Layout"

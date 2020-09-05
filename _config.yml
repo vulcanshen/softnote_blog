@@ -30,8 +30,25 @@ github_url: "https://github.com/shenyun2304/softnote_blog"
 # Build settings
 theme: minima
   
+markdown: kramdown
+
 plugins:
+  - jekyll-toc
   - jekyll-feed
+
+toc:
+  min_level: 1
+  max_level: 1
+  list_class: 'list-group list-group-flush list-toc'
+
+defaults:
+  - 
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      toc: true
+ 
 
 # Exclude from processing.
 # The following items will not be processed, by default.

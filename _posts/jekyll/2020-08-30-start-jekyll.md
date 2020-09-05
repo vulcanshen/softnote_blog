@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 title:  "從零開始"
 categories: "Jekyll"
 content-title: "開始使用 Jekyll"

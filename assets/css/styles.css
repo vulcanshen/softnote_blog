@@ -6176,7 +6176,7 @@ button.bg-light:focus {
 
 .bg-dark {
   /* background-color: #3a3b45 !important; */
-  background-image: linear-gradient(to right, #3a3b45 50%, black 100%) !important;
+  background-image: linear-gradient(to right, #3a3b45 50%, black 75%, black 100%) !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -10057,12 +10057,22 @@ body {
   display: flex;
 }
 #layoutSidenav #layoutSidenav_nav {
-  flex-basis: 225px;
+  flex-basis: 200px;
   flex-shrink: 0;
   transition: transform 0.15s ease-in-out;
   z-index: 1038;
-  transform: translateX(-225px);
+  transform: translateX(-200px);
 }
+
+#layoutSidenav #layoutSidenav_toc {
+  flex-basis: 200px;
+  flex-shrink: 0;
+  transition: transform 0.15s ease-in-out;
+  z-index: 1038;
+  transform-origin: right;
+  transform: translateX(200px);
+}
+
 #layoutSidenav #layoutSidenav_content {
   position: relative;
   display: flex;
@@ -10071,7 +10081,7 @@ body {
   min-width: 0;
   flex-grow: 1;
   min-height: calc(100vh - 56px);
-  margin-left: -225px;
+  margin-left: -200px;
 }
 
 .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
@@ -10095,16 +10105,22 @@ body {
   #layoutSidenav #layoutSidenav_nav {
     transform: translateX(0);
   }
+  #layoutSidenav #layoutSidenav_toc {
+    transform-origin: right;
+    transform: translateX(0);
+  }
   #layoutSidenav #layoutSidenav_content {
     margin-left: 0;
+    margin-right: 0;
+    padding-right: 200px;
     transition: margin 0.15s ease-in-out;
   }
 
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
-    transform: translateX(-225px);
+    transform: translateX(-200px);
   }
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content {
-    margin-left: -225px;
+    margin-left: -200px;
   }
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content:before {
     display: none;
@@ -10114,10 +10130,11 @@ body {
   z-index: 1039;
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav {
-  width: 225px;
+  width: 200px;
   height: 100vh;
   z-index: 1038;
 }
+
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav .sb-sidenav {
   padding-top: 56px;
 }
@@ -10125,9 +10142,10 @@ body {
   overflow-y: auto;
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_content {
-  padding-left: 225px;
+  padding-left: 200px;
   top: 56px;
   background-color: #f8f9fa;
+  float: left;
 }
 
 #layoutError {
@@ -10162,7 +10180,7 @@ body {
   height: 50px;
 }
 .sb-topnav .navbar-brand {
-  width: 225px;
+  width: 200px;
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0;
@@ -10300,3 +10318,51 @@ blockquote {
 .card a:hover {
   color: #f1e7c7;
 }
+
+.sb-nav-fixed #layoutSidenav #layoutSidenav_toc {
+  float: right;
+  width: 200px;
+  height: 100vh;
+}
+.sb-nav-fixed #layoutSidenav #layoutSidenav_toc .sb-sidenav {
+  padding-top: 56px;
+}
+.sb-nav-fixed #layoutSidenav #layoutSidenav_toc .sb-sidenav .sb-sidenav-menu {
+  overflow-y: auto;
+}
+
+.fixed-top, .sb-nav-fixed #layoutSidenav #layoutSidenav_toc, .sb-nav-fixed .sb-topnav {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.sb-sidenav-transparent {
+  background: transparent;
+  /* border-left: 1px solid black;
+  box-sizing: border-box;
+  border-image: linear-gradient(black 0%,transparent 75%) 1;  */
+}
+
+.toc-h1 {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: transparent;
+  
+}
+
+.list-toc > .toc-h1:not(:last-child) {
+  border-bottom: 1px solid black;
+  border-image: linear-gradient(90deg,gray 0%,transparent 100%) 1;
+}
+
+.toc-h1 a {
+  color: #807b6b;
+}
+
+.toc-h1 a:hover {
+  color: black;
+}
+
+
