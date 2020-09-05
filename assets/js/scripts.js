@@ -25,4 +25,7 @@
     if ($('#layoutSidenav_toc').length == 0) {
         $('#layoutSidenav_content').css('padding-right', 0);
     }
+
+    $('.list-toc').addClass('list-group list-group-flush');
+    $('.toc-h1').addClass('list-group-item');
 })(jQuery);

@@ -30,7 +30,7 @@ layout: base
                 </div>
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        {{ content | toc_only }}
+                        {% include toc.html html=content h_min=1 h_max=1 item_class='toc-h1' class='list-toc' %}
                     </div>
                 </div>
             </div>
