@@ -3,6 +3,7 @@ layout: base
 title:  "從零開始"
 categories: "Jekyll"
 content-title: "開始使用 Jekyll"
+description: "從零開始記錄使用 Jekyll 的步驟 - 下載 Jekyll、安裝 Ruby、在本地端啟動 Jekyll、說明Jekyll 的檔案結構、文章前綴物"
 ---
 
 為什麼使用 jekyll 呢?

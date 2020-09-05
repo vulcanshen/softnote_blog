@@ -23,6 +23,7 @@ email: shenyun23.4@gmail.com
 baseurl: "/softnote_blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  shenyun2304
+description: "自學一些技術, 沒有特別方向, 想到什麼就學什麼, 把過程記錄下來, 防止自己學了又忘"
 
 github_url: "https://github.com/shenyun2304/softnote_blog"
 

@@ -3,6 +3,7 @@ layout: base
 title:  "自訂外觀布局"
 categories: "Jekyll"
 content-title: "Theme and Layout"
+description: "不滿足於 Jekyll 內建的 minima 外觀 - 如何手工或者套用其他網路上模板, 本站如何套用 SB Admin 這套 Bootstrap 4 的模板, 基本 Liquid 語法"
 ---
 
 # 外觀 (Theme)
