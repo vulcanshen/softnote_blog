@@ -10065,12 +10065,12 @@ body {
 }
 
 #layoutSidenav #layoutSidenav_toc {
-  flex-basis: 200px;
+  flex-basis: 210px;
   flex-shrink: 0;
   transition: transform 0.15s ease-in-out;
   z-index: 1038;
   transform-origin: right;
-  transform: translateX(200px);
+  transform: translateX(210px);
 }
 
 #layoutSidenav #layoutSidenav_content {
@@ -10112,7 +10112,7 @@ body {
   #layoutSidenav #layoutSidenav_content {
     margin-left: 0;
     margin-right: 0;
-    padding-right: 200px;
+    padding-right: 210px;
     transition: margin 0.15s ease-in-out;
   }
 
@@ -10321,7 +10321,7 @@ blockquote {
 
 .sb-nav-fixed #layoutSidenav #layoutSidenav_toc {
   float: right;
-  width: 200px;
+  width: 210px;
   height: 100vh;
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_toc .sb-sidenav {
