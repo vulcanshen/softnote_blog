@@ -8,15 +8,20 @@ description: "了解 Gradle Dependency Management"
 ---
 
 > 專案會使用各種函式庫，可以從本地端或線上載入函式庫，也可以設定不同情境使用不同的函式庫。
+> 被專案使用的函式庫稱為專案的依賴 (dependencies)，以下記錄設定依賴的相關知識
 
-# 來源
+# 函式庫倉儲
 
-函式庫的來源可以分為 : 其他專案、本地端檔案系統、Maven Repo、Ivy Repo
+> 以下將 Library 中文稱為函式庫，而 repository 中文稱為函式庫倉儲，或者簡稱倉儲
 
-gradle 以 `repositories` 關鍵字來設定函式庫的來源
+函式庫倉儲就是函式庫的來源，或者說就是存放一堆函式庫的地方
+
+倉儲的來源可以分為 : 其他專案、本地端檔案系統、Maven Repo、Ivy Repo
+
+gradle 以 `repositories` 關鍵字來設定函式庫倉儲
 
 
-## 實作-本地端檔案系統
+## 本地端檔案系統作為倉儲
 
 假設檔案結構如下 :
 
@@ -37,9 +42,9 @@ dependencies {
 }
 ```
 
-直接指定檔案位置
+這樣的設定方式，就是直接指定函式庫，而沒有使用倉儲
 
-也可以把 `/lib` 設為函式庫來源，如下 :
+可以把 `/lib` 設為函式庫倉儲，則在依賴函式庫的設定就可以直接使用函式庫的屬性，而不需要指定檔案名稱，如下 :
 
 
 ```groovy
@@ -56,36 +61,34 @@ dependencies {
 }
 ```
 
-已經把 `/lib` 設定為函式庫來源，
-
-所以下方的依賴設定可以直接以套件名稱來設定就好
-
-可以使用簡寫像是 `log4j:log4j:1.2.8` 來表示，
+函式庫宣告方式可以使用簡寫 `群組:函式庫名稱:版本` 的格式宣告，像是 `log4j:log4j:1.2.8` 來表示，
 
 也可以寫完整資訊如 : `group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'`
 
-## 實作-遠端來源
+## 遠端來源作為倉儲
 
-- Maven
+gradle 有內建指定 maven 和 jcenter 的遠端倉儲方法，但是也能直接指定 url
+
+- Maven : 使用內建 `mavneCentral()` 方法
     ```groovy
     repositories {
         mavenCentral()
     }
     ```
-- jcenter
+- jcenter : 使用內建 `jcenter()` 方法
     ```groovy
     repositories {
         jcenter()
     }
     ```
-- 指定 url
+- 指定 url : 直接使用指定 url 來指定 jcenter
     ```groovy
     repositories {
         url "http://jcenter.bintray.com/"
     }
     ```
-    > 這其實就是 jcenter()
-- 客製化 : 內部網路函式庫
+    > 這樣使用和直接呼叫 `jcenter()` 方法意思相同
+- 客製化 : 如果內部網路中有架設 maven 或 ivy 的函式庫倉儲，那可以這樣覆蓋設定
     ```groovy
     repositories {
         maven {
