@@ -12,7 +12,7 @@ description: "了解 Gradle Dependency Management"
 
 # 函式庫倉儲
 
-> 以下將 Library 中文稱為函式庫，而 repository 中文稱為函式庫倉儲，或者簡稱倉儲
+> 以下將 Library 中文稱為函式庫，而 Repository 中文稱為函式庫倉儲，或者簡稱倉儲
 
 函式庫倉儲就是函式庫的來源，或者說就是存放一堆函式庫的地方
 
@@ -101,9 +101,9 @@ gradle 有內建指定 maven 和 jcenter 的遠端倉儲方法，但是也能直
     }
     ```
 
-# 情境
+# 依賴範圍
 
-建置的情境可以分為 : 編譯期 (Compilation)、執行期 (Runtime)、測試編譯期 (Test compilation)、測試執行期 (Test runtime)
+依賴生效的範圍可以分為 : 編譯期 (Compilation)、執行期 (Runtime)、測試編譯期 (Test compilation)、測試執行期 (Test runtime)
 
 ## 範圍關鍵字
 
@@ -132,7 +132,7 @@ gradle -q dependencies
 gradle -q dependencies --configuration implementation
 ```
 
-只列出 `implementation` 情境下的依賴
+只列出 `implementation` 範圍下的依賴
 
 ## 實作
 
@@ -200,4 +200,4 @@ compileClasspath - Compile classpath for source set 'main'.
      \--- javax.activation:javax.activation-api:1.2.0
 ```
 
-就只會印出 `compileClasspath` 情境下依賴的函式庫
+就只會印出 `compileClasspath` 範圍依賴的函式庫
