@@ -284,3 +284,4 @@ Hello, Java
 
 YES! 有興趣的可以執行 `gradle clean run build -i` 來看到底執行了什麼
 
+> `java-library` 插件將在多專案管理說明
